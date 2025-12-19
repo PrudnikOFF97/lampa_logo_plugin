@@ -35,20 +35,15 @@
         }
 
         img.onload = function(){
-          const NW = this.naturalWidth;
-          const NH = this.naturalHeight;
+          // const NW = this.naturalWidth;
+          // const NH = this.naturalHeight;
           const MAX_W = 1000;
           const MAX_H = 200;
 
-          if (NW < MAX_W) {
-            this.style.width  = NW + 'px';
-            this.style.height = NH + 'px';
-          } else {
-            this.style.maxWidth  = MAX_W + 'px';
-            this.style.maxHeight = MAX_H + 'px';
-            this.style.width     = 'auto';
-            this.style.height    = 'auto';
-          }
+          this.style.maxWidth  = MAX_W + 'px';
+          this.style.maxHeight = MAX_H + 'px';
+          this.style.width     = 'auto';
+          this.style.height    = 'auto';
 
           this.style.objectFit = 'contain';
           this.style.marginTop = '20px';
