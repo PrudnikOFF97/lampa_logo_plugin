@@ -58,6 +58,12 @@
             .find('.full-start-new__title')
             .html('')         // очищаем текст
             .append(this);    // вставляем наше <img>
+
+          // Add align-self: start to poster
+          const leftElement = e.object.activity.render().find('.full-start-new__left');
+          if(leftElement.length) {
+            leftElement[0].style.alignSelf = 'start';
+          }
         };
 
       });
