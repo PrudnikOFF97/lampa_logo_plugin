@@ -37,8 +37,8 @@
         img.onload = function(){
           // const NW = this.naturalWidth;
           // const NH = this.naturalHeight;
-          const MAX_W = 600;
-          const MAX_H = 200;
+          const MAX_W = 500;
+          const MAX_H = 100;
 
           this.style.maxWidth  = MAX_W + 'px';
           this.style.maxHeight = MAX_H + 'px';
