@@ -24,7 +24,7 @@
     <li>Вставьте адрес плагина:</li>
       
 ```
-https://felarwont.github.io/lampa_plugin/logo.js
+https://prudnikoff97.github.io/lampa_logo_plugin/logo.js
 ```
 
   <li>Наслаждаемся результатом :)</li>
