@@ -17,7 +17,11 @@
 
       $.get(url, function(res){
         if(!res.logos || !res.logos[0]) return;
-        const logoPath = res.logos[0].file_path;
+        // Find logo with highest aspect_ratio
+        const logoWithHighestAspectRatio = res.logos.reduce((prev, current) => {
+          return (current.aspect_ratio > prev.aspect_ratio) ? current : prev;
+        });
+        const logoPath = logoWithHighestAspectRatio.file_path;
         if(!logoPath) return;
 
         // создаём img, чтобы повесить onload
